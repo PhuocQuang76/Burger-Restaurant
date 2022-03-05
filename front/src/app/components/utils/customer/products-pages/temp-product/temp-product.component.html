@@ -1,0 +1,14 @@
+   
+   <div class='container' *ngIf="product.statusid.toLocaleString() == 'Open' ||  !isCustomer();">
+        <div *ngIf="isclicked"><view-product [innerproduct]= product (eventCloser)="clicked()"></view-product></div>
+        <button (click) = "clicked()" id= 'selector'>
+        <img class='foodimage' src='{{ product | getImg }}' *ngIf = 'image' alt ="your image"/>
+        <div class='productname'>
+            <p>{{ product.name }}</p>
+            <p>{{ product.price }}</p>
+        </div>
+        </button>
+    </div>
+
+
+    

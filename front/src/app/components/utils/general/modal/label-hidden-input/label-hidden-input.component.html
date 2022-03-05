@@ -1,0 +1,10 @@
+<label for={{hiddenInput.input.name}}>
+  {{hiddenInput.input.title}}
+  <span  class="edit" (click)="hide()">
+    <img src="../../../../../../assets/images/edit.png">
+  </span>
+</label>
+
+<p [hidden]="!hiddenInput.hidden" class="{{hiddenInput.input.name}}P">{{hiddenInput.input.value}}</p>
+<input [hidden]="hiddenInput.hidden" id="{{hiddenInput.input.id}}input" name={{hiddenInput.input.name}} type={{hiddenInput.input.type}} [(ngModel)]="hiddenInput.input.value"/>
+<p [hidden]="hiddenInput.hidden" id = "{{hiddenInput.input.id}}error" class="error" ></p>

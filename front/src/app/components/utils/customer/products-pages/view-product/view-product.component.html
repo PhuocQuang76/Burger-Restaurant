@@ -1,0 +1,36 @@
+<div class='modal-containerbp'>
+  <div class='modalbp'>
+    <header>
+      <button type='button' class='exitbutton' (click)='closeWindow()'>exit</button>
+      <h1 class='productname'>
+        {{ innerproduct.name }}
+      </h1>
+
+    </header>
+
+    <div class='info'>
+      <img class='foodimage' src='{{image}}' *ngIf='image' alt="your image" />
+
+      <hr>
+
+      <h2>
+        Price: ${{ innerproduct.price }}
+      </h2>
+
+      <p>
+        {{ innerproduct.description }}
+      </p>
+
+      <div *ngIf="isCustomer(); then customer else seller"></div>
+      <ng-template #customer>
+        <button class="purchase button " (click)='generatePurchase()'>Purchase</button>
+      </ng-template>
+
+      <ng-template #seller>
+
+        <button class="purchase button" (click)='deactivateProduct()'>deactivate</button>
+        <button class="purchase button" (click)='activateProduct()'>activate</button>
+      </ng-template>
+    </div>
+  </div>
+</div>

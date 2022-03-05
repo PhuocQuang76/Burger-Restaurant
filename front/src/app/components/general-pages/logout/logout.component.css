@@ -1,0 +1,11 @@
+a{
+  padding-right: 15px;
+  text-decoration: none;
+  color: #3b3939;
+  font-weight: bold;
+  cursor: pointer;
+}
+a:hover{
+  color: #2b46b0;
+  font-style: italic;
+}

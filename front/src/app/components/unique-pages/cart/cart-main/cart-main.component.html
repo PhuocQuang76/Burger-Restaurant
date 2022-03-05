@@ -1,0 +1,35 @@
+<!--<div class="row">-->
+<!--  <div class="col-xs-12">-->
+<!--    <purchase-->
+<!--      -->
+<!--      *ngFor="let purchaseEl of purchases"-->
+<!--    ></purchase>-->
+<!--  </div>-->
+<!--</div>-->
+
+<div class="row">
+  <div class="col-md-7" *ngIf="display; else infoText">
+    <cart-detail *ngFor="let purchase of purchases" [purchase]="purchase"></cart-detail>
+
+  </div>
+
+  <ng-template #infoText>
+    <p id="empty-cart">The cart is empty !</p>
+  </ng-template>
+
+  <div class="col-md-1"></div>
+
+  <div *ngIf="display" id="calculate" class="col-md-3">
+    <h5 id="price-head">Total of purchases</h5>
+    <div class="price-display">
+      <p>SubTotal: ${{totalPrice |  number: '1.2-2'}}</p>
+      <p>Tax: ${{totalTax |  number: '1.2-2'}}</p>
+      <p>Total: ${{total |  number: '1.2-2'}}</p>
+    </div>
+    <button (click) ="buy()" id="submit-button" type="submit" class="btn btn-success">Buy</button>
+
+  </div>
+  <div class="col-md-1"></div>
+
+</div>
+

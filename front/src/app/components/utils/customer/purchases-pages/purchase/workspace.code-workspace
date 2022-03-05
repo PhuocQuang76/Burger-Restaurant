@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"name": "Project02",
+			"path": "..\\..\\..\\..\\..\\..\\..\\.."
+		},
+		{
+			"name": "album",
+			"path": "..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\test\\bootstrapexample\\bootstrap-4.0.0\\docs\\4.0\\examples\\album"
+		},
+		{
+			"name": "bootstrapangular",
+			"path": "..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\test\\bootstrapexample\\bootstrapangular"
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\..\\..\\..\\..\\DraftProject02"
+		}
+	],
+	"settings": {
+		 "tab.activeBorderTop": "#12ff00",
+    	 "tab.activeBackground": "#0000ff",
+		 "tab.unfocusedActiveBorder": "#000000"
+	}
+}

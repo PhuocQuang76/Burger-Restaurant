@@ -1,0 +1,24 @@
+<form [ngClass]="['params']" #form (ngSubmit)="onSubmit(form)" id ={{params.id}}>
+  <div id="modalShadow" (click)="hide($event)" class="modalShadow2">
+      <div id="modal" class="modal78">
+          <div id="modalWrapper" class="modalWrapper">
+              <div id = "modalHeaderWrapper" class="modalHeaderWrapper">
+                  <span id='closeModal' class="close" (click)="hide($event)">&times;</span><p class="title">{{params.title}}</p>
+              </div>
+              <div id = "modalContentWrapper" class="modalContentWrapper">
+                  <div id="modalContent" class="modalContent">
+                    <label-hidden-input *ngFor="let input of params.formParams.hidden" [hiddenInput]="input"></label-hidden-input>
+                    <label-input *ngFor="let input of params.formParams.inputs" [input]="input"></label-input>
+                    <label-select *ngFor="let select of params.formParams.selects" [select]="select"></label-select>
+                  </div>
+              </div>
+              <div id="modalFooterWrapper" class="modalFooterWrapper">
+                  <div id="modalFooter" class="modalFooter">
+                      <p id="gError" class="error"></p>
+                      <input id="submitter" type='submit' value={{params.footer}}/>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</form>

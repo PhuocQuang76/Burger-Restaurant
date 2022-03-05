@@ -1,0 +1,143 @@
+.error{
+  color: red;
+}
+.width80{
+width: 80%;
+}
+
+.margin10{
+margin-top: 10%;
+}
+
+.centercontent{
+display: block;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+
+.circle{
+width:300px;
+height: 300px;
+border-radius: 50%;
+}
+
+/* modal78 */
+.modalShadow2 {
+  position: fixed;
+  /* Stay in place */
+  z-index: 5;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #000000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+.modal78 {
+  z-index: 10;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+.modal78 .modalWrapper {
+  border: 1px solid #e4e4e4;
+  width: 500px;
+}
+.modal78 .modalWrapper.wide {
+  width: 800px;
+}
+.modal78 .modalWrapper .modalHeaderWrapper {
+  padding: 15px 20px 10px 20px;
+  margin: auto;
+  border-bottom: 1px solid #9c9c9c;
+  background: rgb(255, 172, 63);
+  color: #000;
+}
+.modal78 .modalWrapper .modalHeaderWrapper .modalHeader {
+  margin-bottom: 5px;
+}
+.modal78 .modalWrapper .modalHeaderWrapper .title {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+.modal78 .modalWrapper .modalHeaderWrapper .close {
+  color: #909090;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modal78 .modalWrapper .modalHeaderWrapper .close:hover,
+.modal78 .modalWrapper .modalHeaderWrapper .closefocus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal78 .modalWrapper .modalContentWrapper {
+  padding: 15px 20px 0 20px;
+  margin: auto;
+  background-image: -webkit-linear-gradient(top, #c5c5c5 4px, #e2e2e2 9px, #fbfbfb 22px, #ffffff 100%);
+  overflow: auto;
+}
+
+.modal78 .modalWrapper .modalContentWrapper .modalContent {
+  min-height: 20px;
+  max-height: 450px;
+  line-height: 18px;
+  height: auto;
+}
+.modal78 .modalWrapper .modalContentWrapper .modalContent .listing li {
+  padding: 10px;
+  list-style: none;
+  border: 1px solid #000;
+  border-bottom: none;
+}
+.modal78 .modalWrapper .modalContentWrapper .modalContent .listing li:last-child {
+  border-bottom: 1px solid #000;
+}
+.modal78 .modalWrapper .modalContentWrapper .modalContent .listing li:nth-child(even) {
+  background: #e8e8e8;
+}
+.modal78 .modalWrapper .modalContentWrapper .modalContent .column {
+  float: left;
+  width: 50%;
+}
+.modal78 .modalWrapper .modalContentWrapper .modalContent .column input {
+  width: 205px;
+}
+.modal78 .modalWrapper .modalContentWrapper .modalContent input[type=number],
+.modal78 .modalWrapper .modalContentWrapper .modalContent input[type=password],
+.modal78 .modalWrapper .modalContentWrapper .modalContent input[type=text],
+.modal78 .modalWrapper .modalContentWrapper .modalContent input[type=email],
+.modal78 .modalWrapper .modalContentWrapper .modalContent input[type=search],
+.modal78 .modalWrapper .modalContentWrapper .modalContent textarea,
+.modal78 .modalWrapper .modalContentWrapper .modalContent input[type=datetime-local] {
+  width: 440px;
+}
+
+.modal78 .modalWrapper .modalContentWrapper .modalContent select {
+  width: 447px;
+}
+
+.modal78 .modalWrapper .modalContentWrapper .modalContent .ui-copyinput input {
+  width: 384px;
+}
+.modal78 .modalWrapper .modalFooterWrapper {
+  background: #fff;
+  padding: 15px 20px 20px 20px;
+  margin: auto;
+}
+.modal78 .modalWrapper .modalFooterWrapper .modalFooter {
+  text-align: right;
+}
+.modal78 .modalWrapper .modalFooterWrapper .modalFooter input {
+  margin: 0 0 0 15px;
+}

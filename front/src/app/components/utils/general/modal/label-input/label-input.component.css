@@ -1,0 +1,10 @@
+
+input[type=number],
+input[type=password],
+input[type=text],
+input[type=email],
+input[type=search],
+textarea,
+input[type=datetime-local] {
+  width: 440px;
+}

@@ -1,0 +1,29 @@
+<!-- like a typical amazon search product page -->
+<link rel="stylesheet" href="product.component.css">
+<div class='container'>
+    <div *ngIf="isclicked">
+        <view-product [input]="Product" (eventCloser)="clicked()"></view-product>
+    </div>
+    <button (click)="clicked()" id='selector'>
+        <!-- <div border-style = "product"> -->
+        <!--insert product image here-->
+        <img class='image' src='{{image}}' *ngIf='image' alt="your image">
+    </button>
+    <p>Name: {{ Product.name }}
+        <br> Price: $ {{ Product.price }}
+        <br>Seller: {{ Product.seller?.fname }} {{ Product.seller?.lname }}
+        <br>Status: {{ Product.statusid }}
+    </p>
+    <!-- <p>Description: {{description}} </p> -->
+    <!-- <p>Ingredients:</p>
+<ul>
+    <li *ngFor="let Ingredient of IProduct;">
+        {{i+1}} - {{Ingredient.name}}
+</ul> -->
+
+    <div class="buttonContain">
+        <button>Add to Cart</button>
+        <!-- <button>More information</button> -->
+    </div>
+
+</div>

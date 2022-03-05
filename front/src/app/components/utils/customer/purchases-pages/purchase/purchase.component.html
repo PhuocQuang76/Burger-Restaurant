@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-md-4">
+    <div class="card mb-4 box-shadow">
+      <!--images go here -->
+      <img class="card-img-top" data-src="#" alt="">
+      <div class="card-body">
+        <p class="card-text">{{input.product.name}}</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="btn-group">
+            <button type="button" (click)="onSelected()" class="btn btn-sm btn-outline-secondary">View</button>
+          </div>
+          <small class="text-muted">Total:</small>
+          <small class="text-muted">${{input.product.price}}</small>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-2">
+      <!--    
+    <p class="single-price">Price</p>
+    <p>${{input.product.price}}</p>
+    -->
+    </div>

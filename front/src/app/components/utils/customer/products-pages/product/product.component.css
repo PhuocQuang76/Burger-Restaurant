@@ -1,0 +1,49 @@
+/* body{
+    background-color: grey;
+}
+border-style product{
+    border: 200px;
+    border-color: red;
+} */
+
+.image{
+    width: 150px;
+    height: 150px;
+    object-fit: scale-down;
+    margin: auto;
+    display: block;
+    border-radius: 100%;
+}
+
+.container{
+    margin: 5px;
+    background-color: rgba(167, 167, 167, 0.61);
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.buttonContain{
+    padding: 5px;
+    /* padding-left: 20px; */
+    padding-left: 80px;
+    padding-top: 0px;
+    /* left: 50%;
+    margin-right: -50%; */
+}
+
+#selector{
+    background-color: rgba(167, 167, 167, 0.61);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px;
+    transform: translateY();
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+
+#selector:hover{
+    box-shadow: 5px 10px 10px;
+	transform: translateY(-10px);
+}

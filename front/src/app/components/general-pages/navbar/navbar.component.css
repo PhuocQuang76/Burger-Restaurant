@@ -1,0 +1,40 @@
+.navbar{
+  height: 60px;
+  background-color: #de9232;
+}
+img{
+  width: 50px;
+  height: 50px;
+}
+.img-fluid {
+  max-width: 100% !important;
+  margin-right: 17% !important;
+}
+ul li{
+  margin-top: 15px;
+  display: inline;
+  float: right;
+}
+
+.navbar-header{
+  float:left;
+}
+
+li >a, button{
+  padding-right: 15px;
+  text-decoration: none;
+  color: #3b3939;
+  font-weight: bold;
+}
+li >a:hover{
+  color: #2b46b0;
+  font-style: italic;
+}
+
+#img-card{
+  width: 30px;
+  height: 30px;
+}
+#img-card:hover {
+  transform: scale(1.5);
+}

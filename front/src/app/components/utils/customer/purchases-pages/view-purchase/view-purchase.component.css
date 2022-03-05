@@ -1,0 +1,85 @@
+#view-purchase{
+  margin-top: 5%;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f3ed;
+}
+#reciept-head{
+  background-color:  #ddc99a;
+  display: flex;
+  justify-content: space-between;
+}
+#detail-head{
+  margin-top: 10px;
+  margin-left: 40%;
+}
+#close{
+  background-color: #ded8c5;
+}
+.right{
+  color: #b44669;
+  float: right;
+  margin-right: 2%;
+  font-family: SansSerif;
+  font-style: italic;
+}
+
+#reciept-body{
+  margin-left: 10px;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+#reciept-description{
+  padding-top: 1px;
+  width:100%;
+  font-family: SansSerif;
+  font-style: italic;
+}
+#subTotal{
+  margin-left: 1px;
+  margin-top: 10px;
+}
+
+#view-imgae{
+  height: 100px;
+  width: 100px;
+}
+#information{
+  margin-left: 10px;
+}
+
+.price{
+  font-family: SansSerif;
+  font-style: italic;
+}
+#buttons{
+  padding-top: 40px;
+  text-align: center;
+  padding-right: 5px;
+
+}
+/*  margin-right: 10px;*/
+/*}*/
+p{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.btn{
+  color: #1c1404;
+  background-color: #ddc99a;
+  height: 25px;
+  font-size: small;
+  text-align: center;
+  margin-right: 10px;
+  padding-bottom: 15px;
+  padding-top: 1px;
+}
+
+.btn:hover{
+  color: #d4d0c9;
+  background-color: #658ea9;
+  font-style: italic;
+}

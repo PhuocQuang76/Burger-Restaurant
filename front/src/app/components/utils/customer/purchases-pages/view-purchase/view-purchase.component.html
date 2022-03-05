@@ -1,0 +1,71 @@
+<!--<div id="view-purchase">-->
+<!--  <div id="reciept-head">-->
+<!--    <h4 id="reciept">Reciept</h4>-->
+<!--    <button id=" close" type="submit">x</button>-->
+<!--  </div>-->
+<!--  <hr class="line">-->
+<!--  <div id="reciept-body">-->
+<!--    <p id="p-id">{{input.purchase_id}}</p>-->
+<!--    <h5 id="p-name">{{input.product.name}} </h5>-->
+<!--    <p id="p-price">${{input.product.price}}</p>-->
+<!--  </div>-->
+<!--  <div>-->
+<!--    <p>{{input.product.description}}</p>-->
+<!--  </div>-->
+<!--  <hr class="line">-->
+<!--  <div id="reciept-total">-->
+<!--    <h4 id="p-subtotal">Subtotal</h4>-->
+<!--    <p id="p-total">${{input.product.price}}</p>-->
+<!--  </div>-->
+<!--</div>-->
+<div class="row">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-8">
+    <div id="view-purchase" class='modal-container'>
+
+      <div id="reciept-head">
+        <h4 id="detail-head">Purchase Detail</h4>
+      </div>
+
+      <p class="right">Purchase Status: {{input.statusid}} </p>
+
+      <div id="reciept-body">
+        <h5 id="p-name">{{input.product.name}} </h5>
+        <img id="view-imgae" src="{{image}}" alt="image">
+
+        <div id="reciept-description">
+          <p>Product ID: {{input.purchase_id}}</p>
+          <p>Description: {{input.product.description}}</p>
+        </div>
+
+      </div>
+
+      <hr>
+      <div id="subTotal" class = "row">
+        <div class="col-sm-9">
+          <h6>Subtotal</h6>
+        </div>
+        <div class="price col-sm-3">
+          <p>Price: ${{input.product.price}}</p>
+          <p>Tax: ${{tax}}</p>
+          <p>Total: ${{total | number: '1.2-2'}}</p>
+        </div>
+      </div>
+
+      <hr>
+      <div id="information">
+        <h6>Customer Information:</h6>
+        <p class="price">Name: {{user.fname}} {{user.lname}} </p>
+        <p class="price">Email: {{user.email}} </p>
+
+      </div>
+      <div id="buttons" *ngIf="isSeller()">
+        <button (click)= "approvePurchase(input.purchase_id)" class="btn" type="submit">Accept</button>
+        <button (click) = "declinePurchase(input.purchase_id)" class="btn" type="submit">Decline</button>
+        <button (click) = "deliveryPurchase(input.purchase_id)"class="btn btn-success" type="submit">Delivery</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2"></div>
+</div>
+
